@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age calculator project</title>
+</head>
+<body>
+    <input type=number id="age" placeholder="type your age here">
+    <button id="button" onclick=age()>Click me to calculate Age</button>
+    <p id="ageCalculator"></p>
+    <script>
+        document.getElementById("age").focus()
+        function age(){
+            var age = document.getElementById("age")
+            document.getElementById("ageCalculator").innerHTML = "You are " + age.value + " years old.  "
+        }
+    </script>
+</body>
+</html>
