@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Age calculator 1.1</title>
+</head>
+<body>
+    <input type=number id="age" placeholder="type your age here">
+    <button id="button" onclick=age()>Click me to calculate Age</button>
+    <button onclick=time()>click me to know the time</button>
+    <p id="ageCalculator"></p>
+    <p id="abouttime"></p>
+    <script>
+        document.getElementById("age").focus()
+        function age(){
+            var age = document.getElementById("age")
+            document.getElementById("ageCalculator").innerHTML = "You are " + age.value + " years old.  "
+        }
+        const whatisthetime = new Date();
+        function time() {
+            document.getElementById("abouttime").innerHTML = whatisthetime
+        }
+    </script>
+</body>
+</html>
